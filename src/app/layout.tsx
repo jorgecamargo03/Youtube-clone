@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Youtube-clone",
-  description: "criando um youtube com minhas habilidades",
+  description: "criando um 'youtube' na fé kkk",
   icons:{
     icon:'/svg-yt.ico'
   }

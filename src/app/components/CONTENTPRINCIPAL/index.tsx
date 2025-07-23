@@ -49,7 +49,7 @@ const index = ({setShowAside,showAside}:props) => {
 
         <AsideMenu setShowAside={setShowAside} showAside={showAside}/>
 
-        <main className={`transition-all duration-300 flex-1 min-w-0 ml-[0px] lg:${showAside ? 'ml-[240px]' : ''} sm:ml-[85px]`}>
+        <main className={`transition-all duration-300 flex-1 min-w-0 ml-[0px] ${showAside ? 'lg:ml-[240px]' : ''} sm:ml-[85px]`}>
 
   
 
