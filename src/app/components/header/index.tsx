@@ -38,7 +38,7 @@ const Index = ({ showAside, setShowAside }: props) => {
             <RxHamburgerMenu className="text-3xl mr-3  text-white block " onClick={() => setShowAside(!showAside)} />
           </button>
 
-          <a className="relative mr-1" href="https://www.youtube.com/">
+          <a className="relative mr-1 cursor-pointer" href="https://www.youtube.com/">
             <div>
               <Image src={YoutubeLogo} alt="Logo youtubw" className="h-auto w-[100px] max-w-full min-w-[90px]" />
             </div>
