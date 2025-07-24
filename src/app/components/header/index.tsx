@@ -8,8 +8,7 @@ import { HiOutlinePlus } from "react-icons/hi";
 import { IoMdArrowBack } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 import { HiMiniMicrophone } from "react-icons/hi2";
-
-
+import './index.scss'
 
 // images header
 import YoutubeLogo from '../../assets/logoYoutube.png';
@@ -60,6 +59,7 @@ const Index = ({ showAside, setShowAside }: props) => {
             <button
               type='button'
               className={`
+                
                hover:bg-zinc-800  p-2 rounded-full
                  self-center text-2xl
                  transition-colors duration-150 ease-in
@@ -93,6 +93,7 @@ const Index = ({ showAside, setShowAside }: props) => {
 
           </div>
 
+         <div className='flex '>
           <button type='button'
             onClick={() => setShowInput(!showInput)}
             className={`cursor-pointer h-10 w-10  flex justify-center items-center text-2xl border border-none
@@ -119,15 +120,17 @@ const Index = ({ showAside, setShowAside }: props) => {
           transition-colors duration-300 ease-in-out
           hover:bg-zinc-800
           bg-transparent
+          md-hide
           sm:border-gray-800
           sm:w-12">
             <HiMiniMicrophone/>
           </button>
+             </div>
         </form>
 
-        <nav className={`flex items-center gap-1 ${showInput ? 'hidden sm:flex' : ''}`}>
+        <nav className={`flex items-center gap-1  ${showInput ? 'hidden sm:flex' : ''}`}>
 
-          <button className="text-white h-10 w-auto px-3 flex justify-center items-center gap-1  transition duration-300 ease-in-out rounded-full hover:bg-zinc-800">
+          <button className="text-white h-10 w-auto px-3 flex justify-center items-center gap-1  transition duration-300 ease-in-out rounded-full bg-zinc-800 hover:bg-zinc-700">
 
             <span className="font-thin font-3xl">
               <HiOutlinePlus />
@@ -135,7 +138,7 @@ const Index = ({ showAside, setShowAside }: props) => {
 
             Criar
           </button>
-          <button className="text-white  h-10 w-10 flex justify-center items-center text-[25px] transition duration-300 ease-in-out rounded-full notification ">
+          <button className="text-white  h-10 w-10 flex justify-center items-center text-[25px] transition duration-300 ease-in-out rounded-full notification md-hide ">
             <IoIosNotificationsOutline />
           </button>
           <button className="flex bg-red-600 w-9 h-9 justify-center items-center rounded-full text-[20px] ">

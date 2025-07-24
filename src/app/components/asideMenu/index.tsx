@@ -20,7 +20,7 @@ const index = ({setShowAside,showAside}:props) => {
     const config = "flex items-center gap-3 text-white py-1.5 px-2 transition-colors ease-in-out duration-200 normie text-sm"
 
   return (
-    <aside className={`
+    <aside className={` overflow-y-auto scrollbar-hide
     fixed top-0 left-0 h-full w-[240px] bg-zinc-950 shadow-lg z-20
     transform transition-transform duration-300 ease-in-out
     ${showAside ? 'translate-x-0' : '-translate-x-full'}
